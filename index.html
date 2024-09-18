@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 03</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+   
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1>Board de tarefas</h1>
+        </header>
+        <section id="insertTask">
+            <input type="text" placeholder="Nome da tarefa" id="nome">
+            <input type="text" placeholder="Etiqueta" id="label">
+            <button onclick="insert();" >+</button>
+        </section>
+        <section id="tasks">
+            <div class="task" id="task1">
+                <div class="textTask">
+                    <h2>Implementar tela de listagem de tarefas</h2>
+                    <div class="subInfo">
+                        <p class="label">frontend</p>
+                        <p class="dateCreate">Criado em: 21/08/2024</p>
+                    </div>
+                </div>
+                <button onclick="check(1);">Concluir</button>
+                <img src="img/check.svg" alt="">
+            </div>
+            <div class="taskCheck" id="task2">
+                <div class="textTask">
+                    <h2>Criar endpoint para cadastro de tarefas</h2>
+                    <div class="subInfo">
+                        <p class="label">backend</p>
+                        <p class="dateCreate">Criado em: 21/08/2024</p>
+                    </div>
+                </div>
+                <button onclick="check(2);">Concluir</button>
+                <img src="img/check.svg" alt="">
+            </div>
+            <div class="task" id="task3">
+                <div class="textTask">
+                    <h2>Implementar protótipo da listagem de tarefas</h2>
+                    <div class="subInfo">
+                        <p class="label">UX</p>
+                        <p class="dateCreate">Criado em: 21/08/2024</p>
+                    </div>
+                </div>
+                <button onclick="check(3);">Concluir</button>
+                <img src="img/check.svg" alt="">
+            </div>
+        </section>
+        <hr>
+        <footer>
+            <h1 id="countCheck">tarefa(s) concluída(s)</h1>
+        </footer>
+    </main>
+</body>
+<script src="JS/index.js"></script>
+</html>
